@@ -7,7 +7,7 @@ You will need LFS 10.1 or higher, wget, gcc and make.
 
 ### Starting
 
-Log in as root, make sure that you have at least 5gb of free disk space,
+Log in as root, make sure that you have at least 20gb of free disk space,
 
 download and unpack the current pkgsrc branch with:
 
@@ -47,3 +47,8 @@ And the final (or not yet) step - build MATE:
     bmake install
 
 Then add 'exec mate-session' to your .xinitrc and use startx to start the desktop
+
+To remove 20gb of source files, type:
+
+        cd /usr/pkgsrc
+        bmake clean
